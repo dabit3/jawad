@@ -1,0 +1,19 @@
+{
+  "name": "jawad",
+  "version": "0.0.1",
+  "authors": [
+    "dabit3 <dabit3@gmail.com>"
+  ],
+  "description": "Jackson Area Web & App Developers Website",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://www.developers.ms",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
