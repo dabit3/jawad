@@ -41,8 +41,9 @@ border-bottom: 1px solid rgba(255,255,255,.05)
 
 .content	{
 	position: relative;
-	z-index: 2;
+	z-index: 6;
 	height:100%;
+	box-shadow: -6px 0px 15px rgba(0,0,0,.3)
 
 }
 
@@ -131,5 +132,35 @@ font-size: 46px;
 text-align: center;
 margin-top: 63px;
 line-height: 60px
+}
 
+.main-container-h3 {
+	margin:0;
+	font-weight: 300;
+	color: rgba(255,255,255,.9);
+	padding-top: 40px;
+border-bottom: 1px solid rgba(255,255,255,.9);
+padding-bottom: 10px;
+font-size: 24px;
+}
+
+.main-container-p {
+	color: rgba(255,255,255,.9);
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	
+	}
+
+.main-container-2 {
+	width:900px;
+	margin:0 auto;
+
+}
+
+.second-container {
+	border-top:20px solid #071633;
+	border-bottom:20px solid #071633;
+	background: #132752;
+	padding:10px 0px 40px;
 }
