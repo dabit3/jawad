@@ -1,0 +1,135 @@
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background:#253E71;
+}
+
+.navleft {
+	text-align:center;
+}
+
+.heading {
+	width: 700px;
+margin: 0 auto;
+margin-top: 160px;
+}
+
+.navleft h3 {
+	font-weight: 100;
+background: rgba(0,0,0,.1);
+color: #E5DDDD;
+padding: 20px 0px;
+margin: 0;
+border-bottom: 1px solid rgba(255,255,255,.05)
+}
+
+.navleft h3:hover {
+	background: rgba(0,0,0,.2);
+	cursor:pointer;
+}
+
+.leftnav {
+	position: absolute;
+	z-index: 5;
+	width:300px;
+	background: #253E71;
+	height: 100%;
+	margin-left:-400px;
+}
+
+.content	{
+	position: relative;
+	z-index: 2;
+	height:100%;
+
+}
+
+.main-header {
+	position: relative;
+	z-index: 1;
+	/* Location of the image */
+  background-image: url(../images/bg1.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+
+  height:500px;
+}
+
+.mainnav {
+	padding-top:30px;
+}
+
+.navicon {
+	width:30px;
+}
+
+.hamburger {
+	margin: 0;
+float: left;
+padding: 13px 16px 9px 13px;
+background: #000000;
+color: #ffffff;
+transition: all .4s;
+-webkit-transition: all .4s;
+}
+
+.hamburger:hover {
+	cursor: pointer;
+	background: #253E71;
+}
+
+h1.topnav {
+	margin: 0;
+	color:#ffffff;
+	font-weight: 100;
+	background: rgba(0,0,0,.3);
+	padding: 10px 0 10px 30px;
+	width: 146px;
+	float:left;
+
+}
+
+.main-container {
+	background-image:url('../images/axe.png');
+	background-repeat:no-repeat;
+	background-color: #DBDEDD;
+	height:530px;
+	border-top:20px solid white;
+	background-position: center 10px;
+	border-bottom:20px solid white;
+
+}
+
+.main-container-1 {
+	width:700px;
+	margin:0 auto;
+}
+
+.main-container-h2 {
+	margin: 0;
+color: #000000;
+font-weight: 400;
+font-size: 46px;
+text-align: center;
+margin-top: 63px;
+line-height: 60px
+
+}
