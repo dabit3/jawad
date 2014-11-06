@@ -10,6 +10,14 @@ body {
 	text-align:center;
 }
 
+.navfixed {
+	position: fixed;
+}
+
+nav {
+	position: fixed;
+}
+
 .heading {
 	width: 700px;
 margin: 0 auto;
@@ -33,7 +41,7 @@ border-bottom: 1px solid rgba(255,255,255,.05)
 .leftnav {
 	position: absolute;
 	z-index: 5;
-	width:300px;
+	width:400px;
 	background: #253E71;
 	height: 100%;
 	margin-left:-400px;
@@ -109,13 +117,11 @@ h1.topnav {
 }
 
 .main-container {
-	background-image:url('../images/axe.png');
+	background-image:url('../images/tools.png');
 	background-repeat:no-repeat;
 	background-color: #DBDEDD;
 	height:530px;
-	border-top:20px solid white;
 	background-position: center 10px;
-	border-bottom:20px solid white;
 
 }
 
@@ -126,12 +132,12 @@ h1.topnav {
 
 .main-container-h2 {
 	margin: 0;
-color: #000000;
+color: #132752;
 font-weight: 400;
 font-size: 46px;
 text-align: center;
-margin-top: 63px;
-line-height: 60px
+padding-top: 76px;
+line-height: 60px;
 }
 
 .main-container-h3 {
@@ -142,6 +148,7 @@ line-height: 60px
 border-bottom: 1px solid rgba(255,255,255,.9);
 padding-bottom: 10px;
 font-size: 24px;
+width:100px;
 }
 
 .main-container-p {
@@ -159,8 +166,52 @@ font-size: 24px;
 }
 
 .second-container {
-	border-top:20px solid #071633;
-	border-bottom:20px solid #071633;
+	
 	background: #132752;
 	padding:10px 0px 40px;
 }
+
+.third-container {
+	background:#ffffff;
+}
+
+.third-container-3 {
+	width:900px;
+	margin: 0 auto;
+	padding: 0px 0px 40px;
+}
+
+.third-container-h3 {
+	margin:0;
+	font-weight: 300;
+	color: #000000;
+	padding-top: 40px;
+border-bottom: 1px solid #000000;
+padding-bottom: 10px;
+font-size: 24px;
+width:129px;
+}
+
+footer {
+	background:#081839;
+}
+
+.footer-content {
+	width: 900px;
+	margin: 0 auto;
+	padding: 50px 0px 70px;
+}
+
+.footer-h3 {
+	float:right;
+	color:#ffffff;
+	margin: 0;
+}
+
+.footer-h4 {
+	color: #ffffff;
+	margin:0;
+	font-weight: 300;
+	float:left;
+}
+

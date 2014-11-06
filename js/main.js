@@ -12,10 +12,10 @@ $('#hamburger').click(function() {
 
 	if(open == false) {
 
-		TweenMax.to(content, .3, {marginLeft:300, ease:Cubic.easeOut});
-		TweenMax.to(content, .3, {marginRight:-300, ease:Cubic.easeOut});
+		TweenMax.to(content, .4, {marginLeft:400, ease:Cubic.easeOut});
+		TweenMax.to(content, .4, {marginRight:-400, ease:Cubic.easeOut});
 
-		TweenMax.to(leftnav, .3, {marginLeft:0, ease:Cubic.easeOut});
+		TweenMax.to(leftnav, .4, {marginLeft:0, ease:Cubic.easeOut});
 
 		/* $('.content').animate({
 			marginRight: '-300px'
@@ -34,9 +34,9 @@ $('#hamburger').click(function() {
 
 	} else {
 
-		TweenMax.to(content, .3, {marginRight:0, ease:Cubic.easeIn});
-		TweenMax.to(content, .3, {marginLeft:0, ease:Cubic.easeIn});
-		TweenMax.to(leftnav, .3, {marginLeft:-300, ease:Cubic.easeIn});
+		TweenMax.to(content, .4, {marginRight:0, ease:Cubic.easeInOut});
+		TweenMax.to(content, .4, {marginLeft:0, ease:Cubic.easeInOut});
+		TweenMax.to(leftnav, .4, {marginLeft:-400, ease:Cubic.easeInOut});
 		
 
 		
