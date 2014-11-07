@@ -270,19 +270,48 @@ line-height: 60px;
 	background: #D6D6D6;
 	width:615px;
 	margin: 0 auto;
-	padding: 18px 20px;
+	height:0px;
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,.1);
 	border-radius:8px;
+	overflow: hidden;
 }
 
 .webcare h4 {
 	margin: 0;
 	color:#253E71;
+	padding:20px 20px 0px 20px;
 }
 
 .webcare p {
 	margin: 10px 0px 0px 0px;
 	line-height:26px;
+	padding: 0px 20px 20px 20px;
+}
+
+.hive h4 a, .webcare h4 a {
+	color:#253E71;
+}
+
+.hive {
+	background: #D6D6D6;
+	width:615px;
+	margin: 0 auto;
+	height:0px;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,.1);
+	border-radius:8px;
+	overflow: hidden;
+}
+
+.hive h4 {
+	margin: 0;
+	color:#253E71;
+	padding:20px 20px 0px 20px;
+}
+
+.hive p {
+	margin: 10px 0px 0px 0px;
+	line-height:26px;
+	padding: 0px 20px 20px 20px;
 }
 
 footer {
