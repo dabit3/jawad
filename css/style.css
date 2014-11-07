@@ -258,7 +258,7 @@ line-height: 60px;
 .sponsor:hover {
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,.1);
 	cursor: pointer;
-	background: #D6D6D6;
+	background: #DEDEDE;
 }
 
 .sponsorcontainer {
@@ -267,7 +267,7 @@ line-height: 60px;
 }
 
 .webcare {
-	background: #D6D6D6;
+	background: #DEDEDE;
 	width:615px;
 	margin: 0 auto;
 	height:0px;
@@ -293,7 +293,7 @@ line-height: 60px;
 }
 
 .hive {
-	background: #D6D6D6;
+	background: #DEDEDE;
 	width:615px;
 	margin: 0 auto;
 	height:0px;
@@ -321,13 +321,21 @@ footer {
 .footer-content {
 	width: 900px;
 	margin: 0 auto;
-	padding: 50px 0px 70px;
+	padding:20px 0px 80px;
 }
 
 .footer-h3 {
 	float:right;
 	color:#ffffff;
 	margin: 0;
+	padding: 20px 25px;
+	border-radius: 10px;
+	transition: all .4s;
+-webkit-transition: all .4s;
+}
+
+.footer-h3:hover {
+	background: #1D3056;
 }
 
 .footer-h4 {
@@ -335,6 +343,7 @@ footer {
 	margin:0;
 	font-weight: 300;
 	float:left;
+	padding: 20px 25px;
 }
 
 .clearfix {
