@@ -28,6 +28,10 @@ margin: 0 auto;
 margin-top: 160px;
 }
 
+.heading-image {
+	width:700px;
+}
+
 .navleft h3 {
 	font-weight: 100;
 background: rgba(0,0,0,.1);
@@ -179,7 +183,7 @@ line-height: 60px;
 
 .third-container {
 	background:#ffffff;
-	box-shadow: inset 0px 0px 4px rgba(0,0,0,.3);
+	box-shadow: inset 0px 2px 4px rgba(0,0,0,.2);
 }
 
 .third-container-3 {
@@ -220,7 +224,7 @@ padding-top: 15px
 
 .fourth-container-wrapper {
 	background:#DBDEDD;
-	box-shadow: inset 0px 0px 4px rgba(0,0,0,.3);
+	box-shadow:inset 0px 1px 2px rgba(0,0,0,.2);
 }
 
 .fourth-container {
@@ -355,11 +359,77 @@ footer {
 	clear:both;
 }
 
+/* Mobile Only */
+
+.mobilenav {
+	display: none;
+	position: fixed;
+z-index: 20;
+background:rgba(0,0,0,.6);
+width:100%;
+
+}
+
+.mobile-hamburger {
+	float:left;
+	margin:0;
+	width:35px;
+	padding:12px;
+	background:#000000;
+}
+
+.mobile-hamburger:hover  {
+	cursor:pointer;
+}
+
+.mobile-burger-image {
+	width:35px;
+}
+
+.mobile-logo {
+	float:left;
+	margin:0;
+	font-weight: 100;
+	color:#ffffff;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+
+.mobile-navicon {
+	float: left;
+	margin:0;
+}
+
 /* Media Queries */
 
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 0px) and (max-width: 900px) {
 
- }
+.mobilenav {
+	display: block;
+}
+
+.heading-image {
+	max-width: 100%;
+}
+
+nav {
+	display: none;
+}
+
+
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+
+.heading {
+	width:100%;
+}
+
+
+
+}
 
 
 
