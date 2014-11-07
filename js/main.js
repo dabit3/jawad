@@ -4,6 +4,7 @@ var open = false;
 var sponsor1open = false;
 var sponsor2open = false;
 
+
 var tl = new TimelineMax();
 
 var content = $('.content'),
@@ -11,7 +12,13 @@ var content = $('.content'),
 		sponsorone = $('.sponsorone'),
 		sponsortwo = $('.sponsortwo'),
 		webcare = $('.webcare'), 
-		hive = $('.hive');
+		hive = $('.hive'), 
+		mobileHambuger = $('#mobile-hamburger');
+
+var mobilenav = $('.mobilenav');
+
+tl.to(mobilenav, 4, {backgroundColor:"#081839", delay:5, repeat:-1, yoyo:true})
+
 
 $(sponsorone).click(function() {
 
@@ -84,7 +91,46 @@ $('#hamburger').click(function() {
 		open = false;
 	}
 
-})
+
+
+});
+
+	mobileHambuger.click(function() {
+
+		if(open == false) {
+
+			TweenMax.to(content, .4, {marginLeft:270, ease:Cubic.easeOut});
+			TweenMax.to(content, .4, {marginRight:-270, ease:Cubic.easeOut});
+
+			TweenMax.to(leftnav, .4, {marginLeft:0, ease:Cubic.easeOut});
+
+			/* $('.content').animate({
+				marginRight: '-300px'
+			}, {duration: 300, queue:false}); 
+
+			$('.leftnav').animate({
+				marginLeft: '0px'
+			}, {
+				duration:300, queue:false
+			}) */
+
+			// 	$('.content').css('margin-left', '300px');
+			// $('.content').css('margin-right', '-300px');
+		
+			open = true;
+
+		} else {
+
+			TweenMax.to(content, .4, {marginRight:0, ease:Cubic.easeInOut});
+			TweenMax.to(content, .4, {marginLeft:0, ease:Cubic.easeInOut});
+			TweenMax.to(leftnav, .4, {marginLeft:-270, ease:Cubic.easeInOut});
+			
+
+			
+			open = false;
+		}
+
+	})
 
 
     var body =   $("body");

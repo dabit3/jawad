@@ -158,7 +158,7 @@ line-height: 60px;
 	padding-top: 20px;
 	padding-bottom: 10px;
 	font-size: 36px;
-	width:108px;
+	width:96px;
 }
 
 .main-container-p {
@@ -401,6 +401,24 @@ width:100%;
 	margin:0;
 }
 
+.mobile-sponsors {
+	display: none;
+}
+
+.mobile-sponsor-link {
+	font-size:26px;
+	color:#253E71;
+	text-align: center;
+	background:#D1D1D1;
+	margin-top:20px;
+	width:300px;
+	margin:0 auto;
+	padding: 20px 0px;
+	border-radius:8px;
+	border:1px solid rgba(0,0,0,.1);
+}
+
+
 /* Media Queries */
 
 @media only screen and (min-width: 0px) and (max-width: 900px) {
@@ -417,6 +435,54 @@ nav {
 	display: none;
 }
 
+.leftnav {
+	width:270px;
+ }
+
+.main-container-2 {
+	width:auto;
+	margin:0px 20px;
+} 
+
+.main-container-h3 {
+	padding-top:5px;
+	font-size: 28px;
+	width: 75px;
+}
+
+.main-container-p {
+		font-size:16px;
+		line-height:27px;
+}
+
+.third-container-3 {
+	width:auto;
+	padding:5px 20px 20px;
+
+	
+}
+
+.third-container-h3 {
+	padding-top:15px;
+	font-size: 28px;
+	width:148px;
+}
+
+.first-mobile-three-link {
+	margin-top:25px;
+}
+
+.fourth-container {
+	width:100%;
+}
+
+.footer-content {
+	width:100%;
+}
+
+.mainfooter {
+	padding:0px 10px;
+}
 
 }
 
@@ -427,7 +493,46 @@ nav {
 	width:100%;
 }
 
+.main-container {
+		height:auto;
+		background-image:url('../images/tools-mobile.png');
+		background-position: center center;
+	  
+	  /* Background image doesn't tile */
+	  background-repeat: no-repeat;
+	  
+	  /* Background image is fixed in the viewport so that it doesn't move when 
+	     the content's height is greater than the image's height */
+	  
+	  
+	  /* This is what makes the background image rescale based
+	     on the container's size */
+	  background-size: cover; 
+}
 
+.sponsor-container-section {
+	display: none;
+}
+
+
+
+.main-container-1 {
+	width:100%;
+}
+
+.main-container-h2 {
+	line-height:32px;
+	font-size:22px;
+	padding:22px 20px;
+}
+
+.mobile-sponsors {
+	display: block;
+}
+
+.fourth-container-h3 {
+	margin-bottom: 27px;
+}
 
 }
 
