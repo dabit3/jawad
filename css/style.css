@@ -209,6 +209,11 @@ line-height: 60px;
 padding-top: 15px
 }
 
+.three-link {
+	font-size:18px;
+	line-height:30px;
+}
+
 .three-link a {
 	color: #C6C6C6;
 	text-decoration:none;
@@ -359,6 +364,71 @@ footer {
 	clear:both;
 }
 
+.recenttalks {
+	
+}
+
+.fifth-container-wrap	{
+	background:#132752;
+	padding:0px 0px 30px;
+}
+
+.fifth-container {
+	width:900px;
+	margin: 0 auto;
+
+	
+}
+
+.recenttalks-p {
+	border-bottom: 1px solid #F6F6F6;
+margin: 0 auto;
+font-weight: 300;
+padding-top: 20px;
+padding-bottom: 10px;
+font-size: 36px;
+width: 200px;
+color:#F6F6F6;
+}
+
+.atalk {
+	
+	border-radius:10px;
+	padding:15px 10px;
+	width: 700px;
+	margin: 0 auto;
+	
+}
+
+.avatar-holder {
+	
+	height:100px;
+	
+	text-align:center;
+}
+
+.avatar-holder img {
+	margin-top:35px;
+	border-radius:100px;
+}
+
+.talk-p {
+	color:#D9D9D9;
+	font-weight:300;
+	font-size:16px;
+}
+
+.talk-h {
+	font-size:20px;
+	color:#D9D9D9;
+	font-weight:300;
+}
+
+.talk-holder {
+	text-align:center;
+	margin-top: 36px;
+}
+
 /* Mobile Only */
 
 .mobilenav {
@@ -373,8 +443,7 @@ width:100%;
 .mobile-hamburger {
 	float:left;
 	margin:0;
-	width:35px;
-	padding:12px;
+	padding:10px 20px;
 	background:#000000;
 }
 
@@ -391,9 +460,9 @@ width:100%;
 	margin:0;
 	font-weight: 100;
 	color:#ffffff;
-	margin-top: 10px;
 	margin-left: 20px;
-}
+	padding-top:9px;
+	}
 
 
 .mobile-navicon {
@@ -482,6 +551,14 @@ nav {
 
 .mainfooter {
 	padding:0px 10px;
+}
+
+.navleft h3 {
+	font-weight:300;
+}
+
+.footer-h4 {
+	font-size:14px;
 }
 
 }

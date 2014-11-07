@@ -46,7 +46,7 @@ $(sponsortwo).click(function() {
 	}
 
 	if (sponsor2open == false) {
-		TweenMax.to(hive, .14, {height:145});
+		TweenMax.to(hive, .14, {height:170});
 		sponsor2open = true;
 	} else {
 		TweenMax.to(hive, .14, {height:0});
@@ -137,14 +137,35 @@ $('#hamburger').click(function() {
     var top = body.scrollTop();
 
     $('.aboutus').click(function(e) {
-        e.preventDefault();
-        $('html, body').animate({scrollTop: '1040px'}, 400);
-        TweenMax.to(content, .4, {marginRight:0, ease:Cubic.easeInOut});
+       
+    	e.preventDefault();
+          $('html,body').animate({
+             scrollTop: $("#aboutustarget").offset().top - 70
+      });
+
+
+      TweenMax.to(content, .4, {marginRight:0, ease:Cubic.easeInOut});
 			TweenMax.to(content, .4, {marginLeft:0, ease:Cubic.easeInOut});
 			TweenMax.to(leftnav, .4, {marginLeft:-400, ease:Cubic.easeInOut});
 			
 			open = false;
-    })
+    });
+
+    $('.usefullinks').click(function(e) {
+       
+    	e.preventDefault();
+          $('html,body').animate({
+             scrollTop: $("#usefullinkstarget").offset().top - 70
+      });
+
+
+      TweenMax.to(content, .4, {marginRight:0, ease:Cubic.easeInOut});
+			TweenMax.to(content, .4, {marginLeft:0, ease:Cubic.easeInOut});
+			TweenMax.to(leftnav, .4, {marginLeft:-400, ease:Cubic.easeInOut});
+			
+			open = false;
+
+			 });
 
 
 });

@@ -8,6 +8,16 @@
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-56521422-1', 'auto');
+	  ga('send', 'pageview');
+
+</script>
 </head>
 <body>
 
@@ -17,10 +27,10 @@
 	<div class="leftnav">
 		<section class="navleft">
 			<h3 class="aboutus">ABOUT</h3>
-			<h3 class="contactus">CONTACT</h3>	
-			<h3 class="giveatalk">GIVE A TALK</h3>
+			<a href="mailto:hello@developers.ms"><h3 class="contactus">CONTACT</h3>	</a>
+			<a href="mailto:hello@developers.ms?subject=Submit a talk" title="Submit a talk"><h3 class="giveatalk" >GIVE A TALK</h3></a>
 			<a target="_blank" href="http://www.meetup.com/Jackson-Area-Web-and-Mobile-Developers/"><h3>JOIN THE MEETUP</h3></a>
-			<h3 class="usefullinks">USEFUL LINKS</h3>
+			<h3 class="usefullinks" >USEFUL LINKS</h3>
 			<a href="https://twitter.com/jacksondevs" target="_blank"><h3><i class="fa fa-twitter"></i></h3></a>
 		</section>
 	</div>
@@ -54,7 +64,7 @@
 	
 	<div class="second-container">
 		<section class="main-container-2">
-			<h3 class="main-container-h3">About</h3>
+			<h3 class="main-container-h3" id="aboutustarget">About</h3>
 			<p class="main-container-p">This group is for professional web designers and developers looking to network with others in the industry, learn about new or emerging technologies, and for anyone looking to learn web development (beginner to advanced).</p>
 			<p class="main-container-p">We talk design for the web, share experiences with use of different tools &amp; languages, critique web sites, talk industry, business, employment news, and share motivations and inspirations. This group is intended to become a hub for all today's technologies that make up the Internet as we know it. </p>
 			<p class="main-container-p">
@@ -65,7 +75,7 @@
 
 	<div class="third-container">
 		<div class="third-container-3">
-			<h3 class="third-container-h3">
+			<h3 class="third-container-h3" id="usefullinkstarget">
 				Useful Links
 			</h3>
 			<p class="three-link first-mobile-three-link"><a target="_blank" href="https://developer.mozilla.org/en-US/"><span class="three-big">Mozilla Developer Network</span></a></p>
@@ -74,11 +84,11 @@
 			<p class="three-link three-under"><a href="http://codepen.io/" target="_blank"><span class="three-big">Codepen</span></a></p>
 			<p class="three-link ">CodePen is an HTML, CSS, and JavaScript code editor in your browser with instant previews of the code you see and write. Codepen is a great too to play with different code and see cutting edge techniues.</p>
 			<p class="three-link three-under"><a href="https://news.ycombinator.com" target="_blank"><span class="three-big">Hacker News</span></a></p>
-			<p>Hacker News caters to programmers and entrepreneurs, delivering content related to computer science and entrepreneurship. It is run by Paul Graham's investment fund and startup incubator, Y Combinator.</p>
+			<p class="three-link">Hacker News caters to programmers and entrepreneurs, delivering content related to computer science and entrepreneurship. It is run by Paul Graham's investment fund and startup incubator, Y Combinator.</p>
 			<p class="three-link three-under"><a href="http://www.css-tricks.com" target="_blank"><span class="three-big">CSS-Tricks</span></a></p>
-			<p>Dedicated to the world of CSS and related technologies. Snippets, videos, tricks and tutorials</p>
+			<p class="three-link">Dedicated to the world of CSS and related technologies. Snippets, videos, tricks and tutorials</p>
 			<p class="three-link three-under"><a href="http://www.codecademy.com/"><span class="three-big">Code Academy</span></a></p>
-			<p>Learn how to code.</p>
+			<p class="three-link">Learn how to code.</p>
 		</div>
 	</div>
 
@@ -107,7 +117,7 @@
 					<h4>
 						<a target="_blank" href="http://www.workinthehive.com">#thehive</a>
 					</h4>
-					<p>WebCare360 provides Outstanding Anonymous Offshore European Web Hosting, Reseller Hosting, VPS Hosting and Dedicated Servers and Powerful DDoS mitigation Solutions</p>
+					<p>#HIVE is a workspace community of entrepreneurs, freelancers, and creators. The hive offers a non-traditional working environment that puts their members together in one place with coworkers from different backgrounds. This dynamic allows for incredible cross-market collaboration.</p>
 				</div>
 			</section>
 
@@ -122,6 +132,24 @@
 
 		</div>
 	</div>
+
+	<!-- <div class="fifth-container-wrap">
+		<div class="fifth-container">
+			<div class="recenttalks">
+				<p class="recenttalks-p">Recent Talks</p>
+				<div class="atalk">
+					<div class="avatar-holder">
+						<img src="https://en.gravatar.com/userimage/24505419/2701a4da2b9fe289dbf212b6410fca2c.jpg" alt="">
+					</div>
+					<div class="talk-holder">
+						<p class="talk-h">Animating the browser with Greensock</p>
+						<p class="talk-p">Date: 10/28/2014</p>
+						<p class="talk-p">Presenter: Nader Dabit</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
 	
 	<footer>
 		<div class="mainfooter">
