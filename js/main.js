@@ -1,29 +1,30 @@
 $(document).ready(function() {
 	
-var open = false;
-var sponsor1open = false;
-var sponsor2open = false;
+$(function() {
+    FastClick.attach(document.body);
+});
 
-
-var tl = new TimelineMax();
-
-var content = $('.content'),
+var open = false,
+		sponsor1open = false,
+		sponsor2open = false,
+		content = $('.content'),
 		leftnav = $('.leftnav'), 
 		sponsorone = $('.sponsorone'),
 		sponsortwo = $('.sponsortwo'),
 		webcare = $('.webcare'), 
 		hive = $('.hive'), 
-		mobileHambuger = $('#mobile-hamburger');
-
-var mobilenav = $('.mobilenav');
+		mobileHambuger = $('#mobile-hamburger'),
+		tl = new TimelineMax(),
+		mobilenav = $('.mobilenav'),
+		content = $('.content');
 
 tl.to(mobilenav, 4, {backgroundColor:"#081839", delay:5, repeat:-1, yoyo:true})
-
 
 $(sponsorone).click(function() {
 
 	if (sponsor2open == true) {
 		TweenMax.to(hive, 0, {height:0});
+		
 		sponsor2open = false;
 	}
 
@@ -36,7 +37,6 @@ $(sponsorone).click(function() {
 	}
 
 });
-
 
 $(sponsortwo).click(function() {
 
@@ -52,7 +52,6 @@ $(sponsortwo).click(function() {
 		TweenMax.to(hive, .14, {height:0});
 		sponsor2open = false;
 	}
-
 });
 
 
@@ -86,12 +85,8 @@ $('#hamburger').click(function() {
 		TweenMax.to(content, .4, {marginLeft:0, ease:Cubic.easeInOut});
 		TweenMax.to(leftnav, .4, {marginLeft:-400, ease:Cubic.easeInOut});
 		
-
-		
 		open = false;
 	}
-
-
 
 });
 
@@ -121,28 +116,27 @@ $('#hamburger').click(function() {
 
 		} else {
 
+
 			TweenMax.to(content, .4, {marginRight:0, ease:Cubic.easeInOut});
 			TweenMax.to(content, .4, {marginLeft:0, ease:Cubic.easeInOut});
 			TweenMax.to(leftnav, .4, {marginLeft:-270, ease:Cubic.easeInOut});
 			
-
-			
 			open = false;
+			
 		}
 
-	})
-
+	});
 
     var body =   $("body");
     var top = body.scrollTop();
 
     $('.aboutus').click(function(e) {
-       
+      
     	e.preventDefault();
-          $('html,body').animate({
-             scrollTop: $("#aboutustarget").offset().top - 70
+    	
+      $('html,body').animate({
+         scrollTop: $("#aboutustarget").offset().top - 70
       });
-
 
       TweenMax.to(content, .4, {marginRight:0, ease:Cubic.easeInOut});
 			TweenMax.to(content, .4, {marginLeft:0, ease:Cubic.easeInOut});
@@ -152,12 +146,12 @@ $('#hamburger').click(function() {
     });
 
     $('.usefullinks').click(function(e) {
-       
+      
     	e.preventDefault();
-          $('html,body').animate({
-             scrollTop: $("#usefullinkstarget").offset().top - 70
+    	
+      $('html,body').animate({
+         scrollTop: $("#usefullinkstarget").offset().top - 70
       });
-
 
       TweenMax.to(content, .4, {marginRight:0, ease:Cubic.easeInOut});
 			TweenMax.to(content, .4, {marginLeft:0, ease:Cubic.easeInOut});
@@ -165,7 +159,6 @@ $('#hamburger').click(function() {
 			
 			open = false;
 
-			 });
-
+		});
 
 });
