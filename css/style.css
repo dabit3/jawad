@@ -97,7 +97,7 @@ border-bottom: 1px solid rgba(255,255,255,.05)
 .hamburger {
 	margin: 0;
 float: left;
-padding: 13px 16px 9px 13px;
+padding: 13px 16px 11px 13px;
 background: #000000;
 color: #ffffff;
 transition: all .4s;
@@ -198,6 +198,11 @@ line-height: 60px;
 	padding-bottom: 10px;
 	font-size: 36px;
 	width:190px;
+}
+
+.three-under {
+	border-top: 1px solid #ddd;
+padding-top: 15px
 }
 
 .three-link a {
@@ -349,4 +354,12 @@ footer {
 .clearfix {
 	clear:both;
 }
+
+/* Media Queries */
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+
+ }
+
+
 
