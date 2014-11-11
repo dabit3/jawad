@@ -29,7 +29,7 @@
 			<a href="#" class="aboutus"><h3 >ABOUT</h3></a>
 			<a href="mailto:hello@developers.ms"><h3 class="contactus">CONTACT</h3>	</a>
 			<a href="mailto:hello@developers.ms?subject=Submit a talk" title="Submit a talk"><h3 class="giveatalk" >GIVE A TALK</h3></a>
-			<a target="_blank" href="http://www.meetup.com/Jackson-Area-Web-and-Mobile-Developers/"><h3>JOIN THE MEETUP</h3></a>
+			<a target="_blank" href="http://www.meetup.com/Jackson-Area-Web-And-App-Developers/"><h3>JOIN THE MEETUP</h3></a>
 			<a href="#" class="usefullinks"><h3  >USEFUL LINKS</h3></a>
 			<a href="https://twitter.com/jacksondevs" target="_blank"><h3><i class="fa fa-twitter"></i></h3></a>
 		</section>
@@ -64,7 +64,12 @@
 	
 	<div class="second-container">
 		<section class="main-container-2">
-			<h3 class="main-container-h3" id="aboutustarget">About</h3>
+			<div class="line-holder">
+				<img class="line1" src="images/lin2.png" alt="">
+					<h3 class="main-container-h3" id="aboutustarget">About</h3>
+				<img src="images/lin2.png" alt="" class="line2">
+			</div>
+			<div class="clearfix"></div>
 			<p class="main-container-p">This group is for professional web designers and developers looking to network with others in the industry, learn about new or emerging technologies, and for anyone looking to learn web development (beginner to advanced).</p>
 			<p class="main-container-p">We talk design for the web, share experiences with use of different tools &amp; languages, critique web sites, talk industry, business, employment news, and share motivations and inspirations. This group is intended to become a hub for all today's technologies that make up the Internet as we know it. </p>
 			<p class="main-container-p">
@@ -75,10 +80,13 @@
 
 	<div class="third-container">
 		<div class="third-container-3">
-			<h3 class="third-container-h3" id="usefullinkstarget">
-				Useful Links
-			</h3>
-			<p class="three-link first-mobile-three-link"><a target="_blank" href="https://developer.mozilla.org/en-US/"><span class="three-big">Mozilla Developer Network</span></a></p>
+			<div class="line-holder-2">
+				<img class="line1" src="images/darkline2.png" alt="">
+					<h3 class="third-container-h3" id="usefullinkstarget">Useful Links</h3>
+				<img src="images/darkline2.png" alt="" class="line2">
+			</div>
+			<div class="clearfix"></div>
+			<p style="margin-top:35px;" class="three-link first-mobile-three-link"><a target="_blank" href="https://developer.mozilla.org/en-US/"><span class="three-big">Mozilla Developer Network</span></a></p>
 			<p class="three-link">The Mozilla Developer Network (MDN) provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and HTML5 Apps.
 			</p>
 			<p class="three-link three-under"><a href="http://codepen.io/" target="_blank"><span class="three-big">Codepen</span></a></p>
@@ -87,14 +95,27 @@
 			<p class="three-link">Hacker News caters to programmers and entrepreneurs, delivering content related to computer science and entrepreneurship. It is run by Paul Graham's investment fund and startup incubator, Y Combinator.</p>
 			<p class="three-link three-under"><a href="http://www.css-tricks.com" target="_blank"><span class="three-big">CSS-Tricks</span></a></p>
 			<p class="three-link">Dedicated to the world of CSS and related technologies. Snippets, videos, tricks and tutorials</p>
-			<p class="three-link three-under"><a href="http://www.codecademy.com/"><span class="three-big">Code Academy</span></a></p>
+			
+			<p class="three-link three-under"><a href="http://www.github.com/" target="_blank"><span class="three-big">GitHub</span></a></p>
+			<p class="three-link">GitHub is a Git repository web-based hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features</p>
+	
+			<p class="three-link three-under"><a href="http://www.codecademy.com/" target="_blank"><span class="three-big">Code Academy</span></a></p>
 			<p class="three-link">Learn how to code.</p>
+
 		</div>
 	</div>
 
 	<div class="fourth-container-wrapper">
+		
 		<div class="fourth-container">
-			<h3 class="fourth-container-h3">Sponsors</h3>
+			<div class="line-holder-3">
+				<img class="line1" src="images/blueline2.png" alt="">
+					<h3 class="fourth-container-h3" id="">Sponsors</h3>
+				<img src="images/blueline2.png" alt="" class="line2">
+			</div>
+			
+			<div class="clearfix"></div>
+			
 			<section class="sponsor-container-section">
 				<div class="sponsorcontainer">
 					<div class="sponsor sponsorone" >
@@ -167,5 +188,6 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/resize.js"></script>
 </body>
 </html>

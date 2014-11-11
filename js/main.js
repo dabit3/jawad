@@ -1,8 +1,21 @@
 $(document).ready(function() {
-	
+
+
+
 $(function() {
     FastClick.attach(document.body);
 });
+
+var w = window.innerWidth;
+var line1 = $('.line1'), 
+		line2 = $('.line2');
+
+
+if (w <= 900) {
+	line1.css('display', 'none');
+	line2.css('display', 'none');
+	console.log("Hidden");
+};
 
 var open = false,
 		sponsor1open = false,
@@ -160,5 +173,9 @@ $('#hamburger').click(function() {
 			open = false;
 
 		});
+
+		if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+			$(".navleft h3").css('font-weight', '300', 'important')
+		}
 
 });
