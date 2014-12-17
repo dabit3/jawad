@@ -158,6 +158,21 @@ $('#hamburger').click(function() {
 			open = false;
     });
 
+    $('.code-of-conduct').click(function(e) {
+      
+    	e.preventDefault();
+    	
+      $('html,body').animate({
+         scrollTop: $("#code-of-conducttarget").offset().top - 70
+      });
+
+      TweenMax.to(content, .4, {marginRight:0, ease:Cubic.easeInOut});
+			TweenMax.to(content, .4, {marginLeft:0, ease:Cubic.easeInOut});
+			TweenMax.to(leftnav, .4, {marginLeft:-400, ease:Cubic.easeInOut});
+			
+			open = false;
+    });
+
     $('.usefullinks').click(function(e) {
       
     	e.preventDefault();
