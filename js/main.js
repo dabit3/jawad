@@ -31,7 +31,7 @@ var open = false,
 		mobilenav = $('.mobilenav'),
 		content = $('.content');
 
-tl.to(mobilenav, 4, {backgroundColor:"#081839", delay:5, repeat:-1, yoyo:true})
+// tl.to(mobilenav, 4, {backgroundColor:"#081839", delay:5, repeat:-1, yoyo:true})
 
 $(sponsorone).click(function() {
 

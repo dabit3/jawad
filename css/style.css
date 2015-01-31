@@ -90,6 +90,34 @@ border-bottom: 1px solid rgba(255,255,255,.05)
   height:500px;
 }
 
+
+.main-header2 {
+	position: relative;
+	z-index: 1;
+	/* Location of the image */
+  background-image: url(../images/bg1.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+
+  
+}
+
 .mainnav {
 	padding-top:30px;
 }
@@ -524,6 +552,103 @@ width:100%;
 	border:1px solid rgba(0,0,0,.1);
 }
 
+/* ******************* MAILING LIST PAGE ******************** */
+
+input[type=text],
+input[type=email] {
+    -webkit-box-sizing : border-box;‌​
+    -moz-box-sizing : border-box;
+    box-sizing : border-box;
+}
+
+.mailing-list {
+	padding: 100px 350px 100px;
+}
+
+.mailing-list-signup {
+	padding:20px;
+	background: rgba(255, 255, 255, .9);
+	border-radius: 2px;
+	box-shadow: 0px 0px 25px rgba(0,0,0,.7);
+
+}
+
+.mailing-list-signup .textinput {
+	width:100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 22px;
+	border:none;
+	padding:10px 4px;
+	color:#b2b2b2;
+}
+
+.mailing-list-signup .textinput:focus, .mailing-list-signup .textinput:active {
+	border:none;
+	outline:none;
+	box-shadow: inset 1px 1px 2px rgba(0,0,0,.14)
+}
+
+.ml1 {
+	margin-bottom:20px;
+}
+
+.ml1 label {
+	font-size:26px;
+	color: #253E71;
+	font-weight:300;
+	text-transform:uppercase;
+	padding-left:2px;
+}
+
+.ml3 {
+	margin-top:12px;
+	width:145px;
+	margin:19px auto 0px;
+}
+
+.ml3 input {
+	font-size: 22px;
+	border:none;
+	padding: 12px 30px 13px;
+	color:#253E71;
+	border-radius: 3px;
+		transition:background .5s, color .5s, border .5s;
+	-webkit-transition: background .5s, color: .5s;
+	border-bottom:2px solid #ADA5A5;
+}
+
+.ml3 input:hover {
+	background:#081839;
+	color:#f7f7f7;
+	border-bottom:2px solid #081839;
+}
+
+.mailing-list-copy {
+	margin-top: 24px;
+	border-top:1px solid #D1D1D1;
+	margin-bottom: 24px;
+	border-bottom:1px solid #d1d1d1;
+}
+
+.mailing-list-copy p {
+	color:#253E71;
+	font-weight: 400;
+	font-style:italic;
+	text-align: center;	
+}
+
+.mailing-list-copy-heading {
+	font-size:26px;
+	color: #253E71;
+	font-weight:300;
+	text-transform:uppercase;
+	padding-left:2px;
+}
+
+.mailing-list-copy-p {
+	color: #253E71;
+font-weight: 400;
+}
 
 /* Media Queries */
 
