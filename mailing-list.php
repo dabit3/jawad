@@ -1,8 +1,8 @@
 <?php
 if(isset($_POST['email'])) {
 
-    $email_to = "dabit3@gmail.com, mailinglist@developers.ms";
-    $email_subject = "Add to mailing list";
+    $email_to = "newsletter@developers.ms";
+    $email_subject = "Add to newsletter list";
 
     function died($error) {
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
@@ -41,7 +41,7 @@ if(isset($_POST['email'])) {
 
 
   // create email headers
-  $headers = 'From: info@codesouthlabs.com'."\r\n".
+  $headers = 'From: newsletter@developers.ms'."\r\n".
   'Reply-To: '.$email_from."\r\n" .
   'X-Mailer: PHP/' . phpversion();
   @mail($email_to, $email_subject, $email_message, $headers);

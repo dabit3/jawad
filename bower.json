@@ -18,6 +18,9 @@
   ],
   "dependencies": {
     "normalize-css": "~3.0.2",
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "sweetalert": "~0.4.1",
+    "remodal": "~0.5.0",
+    "firebase": "~2.1.2"
   }
 }

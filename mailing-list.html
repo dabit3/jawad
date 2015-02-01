@@ -8,6 +8,18 @@
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<script src="bower_components/sweetalert/lib/sweet-alert.min.js"></script>
+	<link rel="stylesheet" href="bower_components/sweetalert/lib/sweet-alert.css">
+	
+	<!-- FIREBASE -->
+	<script src="bower_components/firebase/firebase.js"></script>
+
+	<script>var ref = new Firebase("https://developers-newslette.firebaseio.com/");
+	var emailRef = ref.child("newsletter/subscribe");</script>
+	<!-- END FIREBASE -->
+	
+
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -61,7 +73,7 @@
 							</div>
 
 							<div class="ml2">
-								<input name="email" class="textinput" type="text" placeholder="Email">
+								<input name="email" class="textinput" type="text" placeholder="your email address" id="updates-email">
 							</div>
 
 							<div class="ml3">
@@ -76,7 +88,7 @@
 							<p class="mailing-list-copy-heading">About the newsletter</p>
 							<p class="mailing-list-copy-p">We will send carefully curated content from around the web about web and application development. These will include articles, tutorials, blog posts, and tweets! </p>
 							<p class="mailing-list-copy-p">
-								We will also be doing our best to keep a pulse on the local community and any events, hackathons, job openings, or cool things happening in the Jackson &amp; Mississippi technology communities.</p>
+								We will also be keeping a pulse on the local community and any events, hackathons, job openings, or cool things happening in the Jackson &amp; Mississippi technology communities.</p>
 							</p>
 							<p class="mailing-list-copy-p">We everyone to contribute to the newsletter by emailing us at <a href="mailto:mailinglist@developers.ms?subject=Newsletter Submission" style="color:#8E8D8D">mailinglist@developers.ms</a> with any content you think the community will enjoy, we will even give you a shoutout!</p>
 						</div>
@@ -116,6 +128,8 @@
 	</footer>
 
 </div>
+
+
 
 
 <script src="bower_components/fastclick/lib/fastclick.js"></script>

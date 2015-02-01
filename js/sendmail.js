@@ -2,40 +2,32 @@ $(document).ready(function() {
 	
 
 	$('#mailinglist').click(function () {
-        var name = $('#form-name').val();
-        var email = $('#form-email').val();
-        var message = $('#form-feedback-questions').val();
-        var phone = $('#form-phone').val();
-        var varData = 'name=' + name + '&email=' + email + '&message=' + message + '&phone=' + phone;
+	        
+	        var email = $('#updates-email').val();
+	        var varData = 'email=' + email;
+	        if (email == "") {
+	    			swal("Please fill out the email field.");
+	    			return false;
+	    		}
+	        
+	        if(email != "") {
+	        		swal("You've signed up for updates! ", "Unsubscribe at any time.", "success");
+	            
+	        		emailRef.push({ email: email });
+	            console.log(email);
 
-        if (name == "") {
-    			swal("Please fill out the name field.");
-    			return false;
-    		}
+	            $('#updates-email').val("");
+	            $.ajax({
+	                type: "POST",
+	                url: "mailing-list.php",
+	                data: varData,
+	                success: function() {
+	                	
+	                }
+	            });
 
-    		if (email == "") {
-    			swal("Please fill out the email field.");
-    			return false;
-    		}
-
-    		if (message == "") {
-    			swal("Please fill out the message field.");
-    			return false;
-    		}
-
-        if((name != "") && (email != "")) {
-        		$("#theteacherform").hide();
-            var inst = $.remodal.lookup[$('[data-remodal-id=modal]').data('remodal')];
-            inst.open();
-            $.ajax({
-                type: "POST",
-                url: "contactermail",
-                data: varData,
-                success: function() {
-                }
-            });
-            return false;
-        }
+	            return false;
+	        }
     });
 
 });

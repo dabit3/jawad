@@ -562,7 +562,7 @@ input[type=email] {
 }
 
 .mailing-list {
-	padding: 100px 350px 100px;
+	padding: 100px 250px 100px;
 }
 
 .mailing-list-signup {
@@ -571,6 +571,7 @@ input[type=email] {
 	border-radius: 2px;
 	box-shadow: 0px 0px 25px rgba(0,0,0,.7);
 
+	
 }
 
 .mailing-list-signup .textinput {
@@ -580,16 +581,20 @@ input[type=email] {
 	border:none;
 	padding:10px 4px;
 	color:#b2b2b2;
+	background: transparent;
+	border-bottom:2px solid #b2b2b2;
+
 }
 
 .mailing-list-signup .textinput:focus, .mailing-list-signup .textinput:active {
 	border:none;
 	outline:none;
-	box-shadow: inset 1px 1px 2px rgba(0,0,0,.14)
+	border-bottom:2px solid #253E71;
+	background:transparent;
 }
 
 .ml1 {
-	margin-bottom:20px;
+	margin-bottom:7px;
 }
 
 .ml1 label {
@@ -615,6 +620,8 @@ input[type=email] {
 		transition:background .5s, color .5s, border .5s;
 	-webkit-transition: background .5s, color: .5s;
 	border-bottom:2px solid #ADA5A5;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 
 .ml3 input:hover {
@@ -648,6 +655,10 @@ input[type=email] {
 .mailing-list-copy-p {
 	color: #253E71;
 font-weight: 400;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
 /* Media Queries */
