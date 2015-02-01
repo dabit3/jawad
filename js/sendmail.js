@@ -11,7 +11,7 @@ $(document).ready(function() {
 	    		}
 	        
 	        if(email != "") {
-	        		swal("You've signed up for updates! ", "Unsubscribe at any time.", "success");
+	        		swal("You've signed up for the Developers.ms Newsletter! ", "Unsubscribe at any time.", "success");
 	            
 	        		emailRef.push({ email: email });
 	            console.log(email);
@@ -19,7 +19,7 @@ $(document).ready(function() {
 	            $('#updates-email').val("");
 	            $.ajax({
 	                type: "POST",
-	                url: "mailing-list.php",
+	                url: "../mailing-list.php",
 	                data: varData,
 	                success: function() {
 	                	

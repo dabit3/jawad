@@ -7,7 +7,7 @@ a {
 }
 
 body {
-	background:#253E71;
+	background:#0e2048;
 }
 
 .navleft {
@@ -225,10 +225,10 @@ line-height: 60px;
 
 .main-container-p {
 	color: rgba(255,255,255,.9);
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
-	
+	font-family: 'Source Sans Pro', sans-serif;
 	}
 
 .main-container-2 {
@@ -277,6 +277,7 @@ padding-top: 30px;
 .three-link {
 	font-size:18px;
 	line-height:30px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .three-link a {
@@ -552,7 +553,7 @@ width:100%;
 	border:1px solid rgba(0,0,0,.1);
 }
 
-/* ******************* MAILING LIST PAGE ******************** */
+/* ******************* NEWSLETTER LIST PAGE ******************** */
 
 input[type=text],
 input[type=email] {
@@ -569,9 +570,7 @@ input[type=email] {
 	padding:20px;
 	background: rgba(255, 255, 255, .9);
 	border-radius: 2px;
-	box-shadow: 0px 0px 25px rgba(0,0,0,.7);
-
-	
+	box-shadow: 0px 0px 25px rgba(0,0,0,.7);	
 }
 
 .mailing-list-signup .textinput {
@@ -619,15 +618,17 @@ input[type=email] {
 	border-radius: 3px;
 		transition:background .5s, color .5s, border .5s;
 	-webkit-transition: background .5s, color: .5s;
-	border-bottom:2px solid #ADA5A5;
+	border-bottom:2px solid #C3BFBF;
 	font-weight: 300;
 	text-transform: uppercase;
+	background: #DBDBDB
 }
 
 .ml3 input:hover {
 	background:#081839;
 	color:#f7f7f7;
 	border-bottom:2px solid #081839;
+	cursor: pointer;
 }
 
 .mailing-list-copy {
@@ -650,6 +651,7 @@ input[type=email] {
 	font-weight:300;
 	text-transform:uppercase;
 	padding-left:2px;
+	margin-bottom:20px;
 }
 
 .mailing-list-copy-p {
@@ -661,7 +663,15 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
+/* ************ END NEWSLETTER CSS *************** */
+
 /* Media Queries */
+
+@media only screen and  (min-width:901px) and (max-width: 1100px) {
+	 .mailing-list {
+	padding: 100px 150px 100px;
+	}
+}
 
 @media only screen and (min-width: 0px) and (max-width: 900px) {
 
@@ -680,6 +690,10 @@ nav {
 .leftnav {
 	width:270px;
  }
+
+ .mailing-list {
+	padding: 100px 50px 100px;
+}
 
 
 
@@ -847,4 +861,9 @@ nav {
 	}
 }
 
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+	 .mailing-list {
+	padding: 100px 15px 100px;
+	}
+}
 
