@@ -553,7 +553,7 @@ width:100%;
 	border:1px solid rgba(0,0,0,.1);
 }
 
-/* ******************* NEWSLETTER LIST PAGE ******************** */
+/* ******************* NEWSLETTER PAGE ******************** */
 
 input[type=text],
 input[type=email] {
@@ -619,7 +619,7 @@ input[type=email] {
 		transition:background .5s, color .5s, border .5s;
 	-webkit-transition: background .5s, color: .5s;
 	border-bottom:2px solid #C3BFBF;
-	font-weight: 300;
+	font-weight: 600;
 	text-transform: uppercase;
 	background: #DBDBDB
 }
