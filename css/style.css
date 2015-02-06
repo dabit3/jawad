@@ -664,6 +664,21 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #8f8f8f;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #8f8f8f;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #8f8f8f;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #8f8f8f;
+}
+
 /* ************ END NEWSLETTER CSS *************** */
 
 /* Media Queries */
