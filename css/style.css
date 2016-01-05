@@ -15,7 +15,7 @@ body {
 }
 
 .navfixed {
-	position: fixed;
+	position: absolute;
 }
 
 nav {
