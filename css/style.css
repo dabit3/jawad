@@ -8,6 +8,7 @@ a {
 
 body {
 	background:#0e2048;
+	margin:0;
 }
 
 .navleft {
@@ -255,8 +256,6 @@ line-height: 60px;
 }
 
 .third-container-h3 {
-	
-	
 	color: #000000;
 	margin:0 auto;
 	font-weight: 300;
@@ -265,8 +264,10 @@ line-height: 60px;
 	float:left;
 	letter-spacing:2px;
 	font-size:26px;
+}
 
-	
+.conduct-container {
+	background:#EDEDED !important;
 }
 
 .three-under {
@@ -731,9 +732,7 @@ nav {
 
 .third-container-3 {
 	width:auto;
-	padding:5px 20px 20px;
-
-	
+	padding:5px 20px 20px;	
 }
 
 .third-container-h3 {
