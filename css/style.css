@@ -347,6 +347,32 @@ padding-top: 30px;
 	margin: 20px auto 0px;
 }
 
+.sponsorShow {
+	background: #DEDEDE;
+	width:615px;
+	margin: 0 auto;
+	height:0px;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,.1);
+	border-radius:8px;
+	overflow: hidden;
+}
+
+.sponsorShow h4 {
+	margin: 0;
+	color:#253E71;
+	padding:20px 20px 0px 20px;
+}
+
+.sponsorShow p {
+	margin: 10px 0px 0px 0px;
+	line-height:26px;
+	padding: 0px 20px 20px 20px;
+}
+
+.sponsorShow h4 a {
+	color:#253E71;
+}
+
 .webcare {
 	background: #DEDEDE;
 	width:615px;

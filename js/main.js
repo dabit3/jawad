@@ -20,12 +20,19 @@ if (w <= 900) {
 var open = false,
 		sponsor1open = false,
 		sponsor2open = false,
+		sponsor3open = false,
+		sponsor4open = false,
 		content = $('.content'),
 		leftnav = $('.leftnav'), 
 		sponsorone = $('.sponsorone'),
 		sponsortwo = $('.sponsortwo'),
+		sponsorthree = $('.sponsorthree'),
+		sponsorfour = $('.sponsorfour'),
 		webcare = $('.webcare'), 
 		hive = $('.hive'), 
+		cspire = $('.cspire'), 
+		coalesce = $('.coalesce'),
+		good = $('.good'),
 		mobileHambuger = $('#mobile-hamburger'),
 		tl = new TimelineMax(),
 		mobilenav = $('.mobilenav'),
@@ -36,16 +43,15 @@ var open = false,
 $(sponsorone).click(function() {
 
 	if (sponsor2open == true) {
-		TweenMax.to(hive, 0, {height:0});
-		
+		TweenMax.to(good, 0, {height:0});
 		sponsor2open = false;
 	}
 
 	if (sponsor1open == false) {
-		TweenMax.to(webcare, .14, {height:145});
+		TweenMax.to(cspire, .14, {height:145});
 		sponsor1open = true;
 	} else {
-		TweenMax.to(webcare, .14, {height:0});
+		TweenMax.to(cspire, .14, {height:0});
 		sponsor1open = false;
 	}
 
@@ -54,16 +60,48 @@ $(sponsorone).click(function() {
 $(sponsortwo).click(function() {
 
 	if(sponsor1open == true) {
-		TweenMax.to(webcare, 0, {height:0});
+		TweenMax.to(cspire, 0, {height:0});
 		sponsor1open = false;
 	}
 
 	if (sponsor2open == false) {
-		TweenMax.to(hive, .14, {height:170});
+		TweenMax.to(good, .14, {height:170});
 		sponsor2open = true;
 	} else {
-		TweenMax.to(hive, .14, {height:0});
+		TweenMax.to(good, .14, {height:0});
 		sponsor2open = false;
+	}
+});
+
+$(sponsorthree).click(function() {
+
+	if(sponsor4open == true) {
+		TweenMax.to(webcare, 0, {height:0});
+		sponsor4open = false;
+	}
+
+	if (sponsor4open == false) {
+		TweenMax.to(coalesce, .14, {height:170});
+		sponsor3open = true;
+	} else {
+		TweenMax.to(coalesce, .14, {height:0});
+		sponsor3open = false;
+	}
+});
+
+$(sponsorfour).click(function() {
+
+	if(sponsor3open == true) {
+		TweenMax.to(coalesce, 0, {height:0});
+		sponsor3open = false;
+	}
+
+	if (sponsor4open == false) {
+		TweenMax.to(webcare, .14, {height:170});
+		sponsor4open = true;
+	} else {
+		TweenMax.to(webcare, .14, {height:0});
+		sponsor4open = false;
 	}
 });
 
