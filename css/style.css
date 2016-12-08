@@ -908,3 +908,11 @@ nav {
 	}
 }
 
+/***********************************
+Meetup.com Widget Styles
+***********************************/
+
+div.meetup-widget {
+	margin: 0 auto;
+	margin-top: 15px;
+}
